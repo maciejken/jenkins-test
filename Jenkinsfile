@@ -1,7 +1,10 @@
 pipeline {
   agent any
+  parameters {
+    string(name: "YOUR_NAME", defaultValue: "Jenkins")
+  }
   environment {
-    MESSAGE = "Hello Jenkins!"
+    MESSAGE = "Hello ${params.YOUR_NAME}!"
   }
   stages {
     stage('say hello') {
