@@ -1,6 +1,6 @@
 {
   "name": "jenkins-test",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Jenkins pipeline testing",
   "main": "index.js",
   "scripts": {
