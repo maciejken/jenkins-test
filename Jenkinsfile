@@ -10,6 +10,7 @@ pipeline {
     stage('say hello') {
       steps {
         echo "${MESSAGE}"
+        echo "${env.BRANCH_NAME}"
       }
     }
     stage('main') {
